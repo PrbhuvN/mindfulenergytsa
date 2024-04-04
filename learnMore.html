@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fossil-Fuel Consumption</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+    
+        body {
+            background-color: #001011;
+        }
+    
+        .header {
+            color: #E4FDE1;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 400%;
+            margin-left: 3%;
+            margin-top: 50vh;
+        }
+    
+        h4 {
+            color: #E4FDE1;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 160%;
+            font-weight: 300;
+            margin-left: 3%;
+        }
+    
+        .img1 {
+            margin-top: 20%;
+            width:60%;
+            
+            
+            border-radius: 1%;
+
+        }
+        .subHead{
+            color: #E4FDE1;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 400%;
+            
+        }
+        .subText{
+            color:#E4FDE1;
+            font-family: "Pridi", serif;
+            font-size:130%;
+            width:50vw;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+        }
+        .indCard {
+            width: 20%;
+            height: 40vh;
+            background-color: #456990;
+            margin: 20px;
+            border-radius: 1%;
+            border:0;
+            transition: transform .4s ease-in-out
+        }
+        .indCard:hover{
+            transform:scale(1.15);
+            transform:translate3d(10px, -10px, 10px);
+        }
+        #logoPNG{
+            width:10%;
+            padding-left:5%;
+            padding-top: 15%;
+            padding-bottom:7%;
+        }
+        .estText{
+            color:#E4FDE1;
+            text-align: center;
+            font-size:120%;
+            font-family: "Pridi", serif;
+        }
+        .navButtonsAway{
+            background-color: #028090;
+            color:#E4FDE1;
+            font-family: "Pridi", serif;
+            font-weight: 500;
+            padding:.5% 1% .5% 1%;
+            margin-top:3%;
+            font-size: 120%;
+            margin:2%
+        }
+        .headerContainer{
+            
+            width:100%;
+            height:10%;
+            
+        }
+        .indButtons {
+        margin: 0% 3% 0% 3%;
+        padding: 0.5% 1% 0.5% 1%;
+        border: none;
+        background-color: #001011;
+        color: aliceblue;
+        font-size: 130%;
+        font-family: "Pridi", serif;
+        transition: color 0.3s, border-bottom-color 0.3s;
+        position: relative;
+        }
+
+        .indButtons::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #E4FDE1;
+            transition: width 0.3s ease;
+        }
+
+        .indButtons:hover::before {
+            width: 100%;
+        }
+
+        .indButtons:hover {
+            color: #E4FDE1;
+        }
+        .indCardText{
+            color:#E4FDE1;
+            font-family: "Pridi", serif;
+            font-weight: 400;
+            text-align: center;
+
+        }
+        .indCardText1{
+            color: #E4FDE1;
+            font-family: "Josefin Sans", sans-serif;
+            font-size:100%;
+            width:80%;
+            text-align: center;
+            margin-left: 10%;
+        }
+        </style>
+    
+</head>
+<body>
+    <div class = "headerContainer">
+        
+        <center>
+            <button class = "indButtons" onclick = "window.open('index.html', '_self')">Homepage</button>
+            <button class = "indButtons" onclick = "window.open('learnMore.html', '_self')">Learn More</button>
+            <button class = "indButtons" onclick = "window.open('commonPractice.html', '_self')">Common Practices</button>
+            <button class = "indButtons" onclick = "window.open('comparisons.html', '_self')">Cost Comparisons</button>
+            <button class = "indButtons" onclick = "window.open('credits.html', '_self')">Credits(Work Log + Checklist)</button>
+        </center>
+    </div>
+    <h1 class = "header">Fossil-Fuel Consumption</h1>
+    <h4>We are the pioneers of our own future.</h4>
+
+    <div>
+        
+        <center><img class = "img1" src = "khamkeo-vilaysing-QfBAsUzsmgk-unsplash.jpg"></center>
+        <center>
+            <h2 class = "subHead">What?</h2>
+            <p class  = "subText">As our fossil fuel usage increases each year, the demand for new solutions increases. Meeting this demand is no easy feat, but if everyone contributes their part, we can do it.</p>
+        </center>
+        <center>
+            <h2 class = "subHead">Who?</h2>
+            <p class  = "subText">Multiple government, public, and private organizations exist that are working towards minimizing the negative effects of fossil-fuels. Here are a few government programs specializing in this.</p>
+        </center>
+    </div>
+    <div class="cards">
+        <div class="indCard">
+            <h1 class = "indCardText">EPA</h1>
+            <p class = "indCardText1">The EPA(Environemntal Protection Agency) is the organization that investigates and remedies environmental issues by adressing them and preventing them from occuring in the first place. It is an organization of the United States government, and is primarily geared towards helping the citizens of the United States while connecting them to the environment in a safe manner.</p>
+        </div>
+        <div class="indCard">
+            <h1 class = "indCardText">Department of Energy</h1>
+            <p class = "indCardText1">The Department of Energy(energy.gov) is run by the United States government to, "ensure America's security and prosperity by addressing its energy, environmental and nuclear challenges through transformative science and technology solutions"(energy.gov).</p>
+        </div>
+        <div class="indCard">
+            <h1 class = "indCardText">Energy Star</h1>
+            <p class = "indCardText1">A certification and label symbol that describes the efficacy of products that use energy, such as appliances and other forms of technology.</p>
+        </div>
+    </div>
+    <center>
+    <div>
+        <button class = "navButtonsAway" onclick = "window.open('commonPractice.html', '_self')" >View Common Green Energy Practices</button>
+    </div>
+    </center>
+    <div class = "pageBottom">
+        <img id = "logoPNG" src = "logo.png">
+        <p class = "estText">Est. 2024</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparisons</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+        body{
+            background-color: #001011;
+        }
+        .header {
+            color: #E4FDE1;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 400%;
+            margin-left: 3%;
+            margin-top: 50vh;
+            opacity: 0;
+            transition: opacity 1s;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        h4 {
+            color: #E4FDE1;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 160%;
+            font-weight: 300;
+            margin-left: 3%;
+            opacity: 0;
+            transition: opacity 1s;
+            animation: fadeIn2 1s ease-in-out forwards;
+            animation-delay: 1s;
+        }
+        h2{
+            color:#E4FDE1;
+            font-family: "Pridi", serif;
+            font-weight:500;
+            margin-left: 3%;
+            font-size:250%;
+            
+            padding:5%;
+        }
+        .subText{
+            color:#E4FDE1;
+            font-family: "Pridi", serif;
+            font-weight:00;
+            margin-left:3%;
+            font-size:130%;
+            margin-top:3vh;
+            padding:5%;
+        }
+        .indDiv{
+            background-color: #028090;
+            width:80vw;
+            margin-left: 3%;
+            padding-top:-10%;
+            border-radius: 1%;
+        }
+        .indDiv2{
+            background-color: #F45B69;
+            width:80vw;
+            margin-left: 3%;
+            padding-top:-10%;
+            border-radius: 1%;
+        }
+        .allCards{
+            margin-top: 30%;
+        }
+        a{
+            color:#E4FDE1;
+            font-family: "Pridi", serif;
+            font-weight:200;
+            margin-left: 3%;
+            font-size:250%;
+            padding:5%;  
+        }
+        .headerContainer{
+            
+            width:100%;
+            height:10%;
+            opacity: 0;
+        transition: opacity 1s;
+        animation: fadeIn2 1s ease-in-out forwards;
+        animation-delay: 1.5s;
+            
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn2 {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .indButtons {
+        margin: 0% 3% 0% 3%;
+        padding: 0.5% 1% 0.5% 1%;
+        border: none;
+        background-color: #001011;
+        color: aliceblue;
+        font-size: 130%;
+        font-family: "Pridi", serif;
+        transition: color 0.3s, border-bottom-color 0.3s;
+        position: relative;
+        
+        }
+
+        .indButtons::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #E4FDE1;
+            transition: width 0.3s ease;
+        }
+
+        .indButtons:hover::before {
+            width: 100%;
+        }
+
+        .indButtons:hover {
+            color: #E4FDE1;
+        }
+
+        </style>
+    
+</head>
+<body>
+    <div class = "headerContainer">
+        
+        <center>
+        <button class = "indButtons" onclick = "window.open('index.html', '_self')">Homepage</button>
+        <button class = "indButtons" onclick = "window.open('learnMore.html', '_self')">Learn More</button>
+        <button class = "indButtons" onclick = "window.open('commonPractice.html', '_self')">Common Practices</button>
+        <button class = "indButtons" onclick = "window.open('comparisons.html', '_self')">Cost Comparisons</button>
+        <button class = "indButtons" onclick = "window.open('credits.html', '_self')">Credits(Work Log + Checklist)</button>
+        </center>
+    </div>
+    <h1 class = "header">Benefits of Fighting Fossil-Fuels</h1>
+    <h4>Innovation is pretty cool. But you know what's cooler? Invention.</h4>
+
+
+    <div class = "allCards">
+        <div class = "indDiv">
+            <h2>Geothermal Heat Pumps</h2>
+            <a target="_blank" href = "https://dandelionenergy.com/geothermal-operating-costs
+            ">Source: dandelionenergy.com</a>
+        <p class = "subText">Geothermal pumps are the most efficient and clean way to power heating and cooling. They can save 30-70% on heating costs and 20-50% of cooling costs.
+
+        </p>
+        </div>
+        <div class = "indDiv2">
+            <h2>Solar Panels</h2>
+            <a target="_blank" href = "https://blog.ecoflow.com/us/how-much-solar-panels-save-on-electricity-bill/
+            ">Source: ecoflow.com</a>
+        <p class = "subText"> In NC, the average monthly electricity bill is $120.98, but solar panels can save on average $109.24, bringing the bill down to $11.74.</p>
+        </div>
+        <div class = "indDiv">
+            <h2>Wind Systems</h2>
+            
+            <a target="_blank" href = "https://www.energy.gov/energysaver/small-wind-electric-systems
+            ">Source: energy.gov</a>
+        <p class = "subText">If there is enough wind in your area, small wind electric systems can be some of the most cost-effective renewable energy systems. They can lower your electricity bills by 50-90%.
+		
+        </p>
+        </div>
+        <div class = "indDiv">
+            <h2>Tax Rebate Information</h2>
+            
+            <a target="_blank" href = "https://www.energystar.gov/about/federal-tax-credits
+            ">Source: energystar.gov</a>
+            <a target="_blank" href = "https://www.energystar.gov/about/federal-tax-credits
+            ">Source: lookforwatersense.epa.gov</a>
+        <p class = "subText">If there is enough wind in your area, small wind electric systems can be some of the most cost-effective renewable energy systems. They can lower your electricity bills by 50-90%.
+		
+        </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
